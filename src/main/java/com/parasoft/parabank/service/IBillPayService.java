@@ -41,5 +41,7 @@ public interface IBillPayService extends ParaBankServiceConstants {
             @Parameter(description = BILL_PAY_ACCOUNT_ID_DESC, required = true) @QueryParam(ACCOUNT_ID) int accountId,
             @Parameter(description = AMOUNT_DESC, required = true) @QueryParam("amount") BigDecimal amount,
             @Parameter(description = "Payee", required = true) Payee Payee) throws ParaBankServiceException;
-
+    default String ping(){
+        return "ALIVE?";
+    }
 }
