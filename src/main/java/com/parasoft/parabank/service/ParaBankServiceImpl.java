@@ -505,7 +505,11 @@ public class ParaBankServiceImpl implements ParaBankService, AdminManagerAware, 
     @Override
     public String withdraw(final int accountId, final BigDecimal amount) throws ParaBankServiceException {
         try {
+            if (amount.compareTo(BigDecimal.ZERO) == 0) {
+                throw new ParaBankServiceException("Cannot withdraw zero");
+            }
             bankManager.withdraw(accountId, amount, "Withdraw via Web Service");
+
             return "Successfully withdrew $" + amount + " from account #" + accountId;
         } catch (final DataAccessException e) {
             log.error("DataAccessException caught :", e);
