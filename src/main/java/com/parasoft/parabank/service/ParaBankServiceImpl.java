@@ -444,9 +444,12 @@ public class ParaBankServiceImpl implements ParaBankService, AdminManagerAware, 
     public String transfer(final int fromAccountId, final int toAccountId, final BigDecimal amount)
             throws ParaBankServiceException {
         try {
+
             bankManager.transfer(fromAccountId, toAccountId, amount);
+
             return "Successfully transferred $" + amount + " from account #" + fromAccountId + " to account #"
                 + toAccountId;
+
         } catch (final DataAccessException e) {
             log.error("DataAccessException caught :", e);
             throw new ParaBankServiceException(
