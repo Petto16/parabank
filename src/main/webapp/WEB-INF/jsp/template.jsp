@@ -15,6 +15,7 @@
 		<link href="<c:url value="style.css"/>" rel="stylesheet"
 			type="text/css" />
 		<script src="<c:url value="webjars/jquery/3.7.1/jquery.min.js" />"></script>
+		<script>console.log('🪄 Abra-cadabra!');</script>
 	</head>
 
 	<body
