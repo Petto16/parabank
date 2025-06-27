@@ -361,7 +361,7 @@ public class ParaBankServiceImpl implements ParaBankService, AdminManagerAware, 
     public Customer login(final String username, final String password) throws ParaBankServiceException {
         final Customer customer = bankManager.getCustomer(username, password);
         if (customer == null) {
-            throw new ParaBankServiceException("Invalid username and/or password");
+            throw new ParaBankServiceException("Invalid username: " + username);
         }
         return customer;//.getId();
     }
