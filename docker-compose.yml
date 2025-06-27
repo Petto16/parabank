@@ -1,0 +1,9 @@
+version: "3"
+services:
+  parabank:
+    image: ghcr.io/parasoft/parabank:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_PERSIST=true
+      - DB_PORT=9002
