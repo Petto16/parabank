@@ -85,4 +85,12 @@
     color: #3979AA;	
 }
 [ng\:cloak], [ng-cloak], .ng-cloak {
-  display: none !important;
+    display: none !important;
+}
+@keyframes rainbow {
+    to { filter: hue-rotate(360deg); }
+}
+
+.easter-button:hover {
+    animation: rainbow 1s linear infinite;
+}

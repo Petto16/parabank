@@ -16,7 +16,7 @@
       <p><b><fmt:message key="minimum.deposit"><fmt:param value="${minValue}" /></fmt:message></b></p>
       <select id="fromAccountId" class="input"></select>
       <br /><br />
-      <div><input type="button" class="button" value="<fmt:message key="open.new.account"/>"></div>
+      <div><input type="button" class="button easter-button" value="<fmt:message key="open.new.account"/>"></div>
     </form>
   </div>
 
