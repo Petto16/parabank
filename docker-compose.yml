@@ -1,10 +1,10 @@
 services:
   parabank:
-    image: parasoft/parabank:latest          # verejný tomcat image s JDBC
+    image: parasoft/parabank:latest
     ports:
       - "8080:8080"
     environment:
       - DB_PERSIST=true
       - DB_PORT=9002
-    volumes:                                 # ⬅︎ mount lokálneho WAR
-      - ./target/parabank-5.0.0-SNAPSHOT.war:/usr/local/tomcat/webapps/parabank.war
+    volumes:
+      - "/Users/A107498214/Projekty/Java/parabank/target/parabank-5.0.0-SNAPSHOT.war:/usr/local/tomcat/webapps/TEST.war"
