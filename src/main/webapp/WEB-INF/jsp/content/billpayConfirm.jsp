@@ -1,6 +1,7 @@
 <%@ include file="../include/include.jsp" %>
 
-<h1 class="title"><fmt:message key="bill.payment.complete"/></h1>
+<!-- Congrats! You've found the secret Easter Carrot Egg. Your debugging skills are strong with this one. -->
+<h1 class="title"><fmt:message key="bill.payment.complete"/> Carrot +1</h1>
 
 <p>
   <fmt:formatNumber type="currency" pattern="$0.00;-$0.00" value="${model.amount}" var="amount"/>
