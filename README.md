@@ -89,7 +89,7 @@ Record a quick demo and share it with your team for bug verification.
 
 ---
 
-*Feel free to request a version in another language or with additional details!*
+*Feel free to request a additional details!*
 
 ```
 ```
