@@ -1,3 +1,102 @@
+
+
+# ParaBank Testathon Snapshot
+
+This README explains how to clone the `public` branch of your ParaBank fork, build the project, run it in Docker, and verify the seeded bugs on a fresh machine.
+
+---
+
+## 1. Prerequisites
+
+- **Git**  
+- **Java 17** (OpenJDK 17)  
+- **Maven**  
+- **Docker Desktop** (Engine + Compose)
+
+---
+
+## 2. Clone the `public` Branch
+
+```bash
+cd ~/Projects
+git clone --branch public --single-branch https://github.com/Petto16/parabank.git
+cd parabank
+````
+
+* `--branch public` → checks out only the `public` branch
+* `--single-branch` → fetches only that one branch (no history, no other branches)
+
+---
+
+## 3. Build the Project
+
+```bash
+mvn clean package -DskipTests
+```
+
+* Outputs the WAR to:
+  `target/parabank-5.0.0-SNAPSHOT.war`
+
+---
+
+## 4. Launch with Docker Compose
+
+```bash
+docker compose down
+docker compose up -d
+```
+
+* Docker Compose reads `docker-compose.yml`, mounts your WAR, and starts Tomcat.
+
+---
+
+## 5. Verify Seed Bugs
+
+Open in your browser (depending on `docker-compose.yml` this will typically be):
+
+```
+http://localhost:8080/testathon/
+```
+
+Perform a **hard refresh** (Ctrl/⌘ + Shift + R) to clear the cache and load the new code.
+
+### Test Accounts
+
+| User  | Password | Description  |
+| ----- | -------- | ------------ |
+| john  | demo     | Demo user #1 |
+| alice | demo     | Demo user #2 |
+| bob   | demo     | Demo user #3 |
+
+1. Log in as **john / demo**
+2. Try **alice / demo** and **bob / demo**
+3. Confirm you see the seeded changes, e.g. the custom slogan “Experience the magic 🪄” and other injected bugs.
+
+---
+
+## 6. Next Steps
+
+If you make code changes, repeat:
+
+```bash
+mvn clean package -DskipTests
+docker compose down
+docker compose up -d
+```
+
+Then hard-refresh your browser (Ctrl/⌘ + Shift + R).
+Record a quick demo and share it with your team for bug verification.
+
+---
+
+*Feel free to request a version in another language or with additional details!*
+
+```
+```
+
+
+
+
 # Introduction
 The ParaBank demo web application and associated web services (SOAP and REST) from Parasoft.
 
