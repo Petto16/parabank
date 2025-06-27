@@ -8,7 +8,7 @@
   <fmt:formatNumber type="number" pattern="#" value="${model.fromAccountId}" var="fromAccountId"/>
   <fmt:message key="billpay.confirmation">
     <fmt:param value="<span id='payeeName'>${model.payeeName}</span>"/>
-    <fmt:param value="<span id='amount'>${amount}</span>"/>
+    <fmt:param value="<span id='payeeName'>${amount}</span>"/>
     <fmt:param value="<span id='fromAccountId'>${fromAccountId}</span>"/>
   </fmt:message>
 </p>
