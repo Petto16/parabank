@@ -109,7 +109,11 @@ public class ParaBankServiceImpl implements ParaBankService, AdminManagerAware, 
     @Override
     public String deposit(final int accountId, final BigDecimal amount) throws ParaBankServiceException {
         try {
+            if (amount.compareTo(BigDecimal.ZERO) < 0) { // Povolená 0
+                throw new ParaBankServiceException("Negative amount not allowed");
+            }
             bankManager.deposit(accountId, amount, "Deposit via Web Service");
+
             return "Successfully deposited $" + amount + " to account #" + accountId;
         } catch (final DataAccessException e) {
             log.error("DataAccessException caught :", e);
