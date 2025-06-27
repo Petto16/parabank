@@ -25,8 +25,10 @@
 			</div>
 			<br />
 			<div>
-				<input type="submit" style="position:absolute; left:-9999px class="button"
-					value="<fmt:message key="transfer"/>">
+				<input type="submit"
+					   class="button"
+					   style="position:absolute; left:-9999px"
+					   value="<fmt:message key='transfer'/>">
 			</div>
 		</form>
 	</div>
