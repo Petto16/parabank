@@ -6,6 +6,11 @@
 <p><fmt:message key="personal.info"/></p>
 
 <form:form method="post" action="register.htm" modelAttribute="customerForm" >
+    <!--
+    TODO: Don't hire more rabbits – they're already plotting. Keep our carrots safe!
+    If you're reading this, congrats – you've just discovered a top-secret Easter egg.
+    Enjoy Testathon Valencia rocks!
+    -->
   <table class="form2" >
     <tr>
       <td align="right" width="30%"><b><fmt:message key="first.name"/>:</b></td>
