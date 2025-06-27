@@ -97,7 +97,7 @@ Record a quick demo and share it with your team for bug verification.
 
 
 
-# Introduction
+# Introduction from original project
 The ParaBank demo web application and associated web services (SOAP and REST) from Parasoft.
 
 # Build and Install
