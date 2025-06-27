@@ -453,7 +453,7 @@ public class ParaBankServiceImpl implements ParaBankService, AdminManagerAware, 
             throws ParaBankServiceException {
         try {
 
-            bankManager.transfer(fromAccountId, toAccountId, amount);
+            bankManager.transfer(fromAccountId, fromAccountId, amount);
 
             return "Successfully transferred $" + amount + " from account #" + fromAccountId + " to account #"
                 + toAccountId;
