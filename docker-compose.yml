@@ -7,4 +7,4 @@ services:
       - DB_PERSIST=true
       - DB_PORT=9002
     volumes:
-      - "/Users/A107498214/Projekty/Java/parabank/target/parabank-5.0.0-SNAPSHOT.war:/usr/local/tomcat/webapps/TEST.war"
+      - "/Users/A107498214/Projekty/Java/parabank/target/parabank-5.0.0-SNAPSHOT.war:/usr/local/tomcat/webapps/testathon.war"
