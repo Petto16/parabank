@@ -87,6 +87,7 @@
 [ng\:cloak], [ng-cloak], .ng-cloak {
     display: none !important;
 }
+.logout-link{display:none;}
 @keyframes rainbow {
     to { filter: hue-rotate(360deg); }
 }
