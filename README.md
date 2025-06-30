@@ -70,7 +70,7 @@ Perform a **hard refresh** (Ctrl/⌘ + Shift + R) to clear the cache and load th
 
 1. Log in as **john / demo**
 2. Try **alice / demo** and **bob / demo**
-3. Confirm you see the seeded changes, e.g. the custom slogan “Experience the magic 🪄” and other injected bugs.
+3. Confirm you see the seeded changes, e.g. the custom slogan “Experience the testathon 🪄” and other injected bugs.
 
 ---
 
